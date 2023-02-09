@@ -1,3 +1,80 @@
 /* ********* */
 /* @VARIABLES */
 /* ********* */
+
+$tamanyoBoton: 1.7rem;
+$tamanyoPH: 1.5rem;
+$tamanyoH6: 2.6rem;
+
+$colorFondo: linear-gradient(#196C8E, #13fDE0);
+$colorText: white;
+
+body{
+    margin: 0;
+    padding: 0;
+    background: $colorFondo;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1%;
+
+    @media screen and (max-width: 1000px) {
+        padding: 0 5%;
+      }
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+h6{
+    margin: 0;
+    color: $colorText;
+    font-size: $tamanyoH6;
+    @media screen and (max-width: 400px) {
+        font-size: 23px;
+        text-align: center;
+      }
+}
+
+.zonaEmail{
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 15px 5px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+}
+
+button{
+    background: none;
+    color: $colorText;
+    font-weight: bold;
+    border: none;
+    font-size: $tamanyoBoton;
+    @media screen and (max-width: 400px) {
+        font-size: 20px;
+      }
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    margin-left: 2%;
+    width: 80%;
+    padding: 10px;
+}
+
+input::placeholder{
+    color: $colorText;
+    font-size: $tamanyoPH;
+    @media screen and (max-width: 400px) {
+        font-size: 20px;
+      }
+    font-weight:lighter;
+    
+}
